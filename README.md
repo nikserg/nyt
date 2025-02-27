@@ -66,7 +66,7 @@ and validation of request is made on Controller level.
 
 ## Running tests
 
-Use command 
+Use command
 
 ```bash
 php artisan test
