@@ -26,5 +26,7 @@ jobs:
       run: chmod -R 777 storage bootstrap/cache
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       run: php artisan test
+    - name: Checkout code
+      uses: actions/checkout@v2
     - name: phpunit-coverage-badge
       uses: timkrase/phpunit-coverage-badge@v1.2.1
