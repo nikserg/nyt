@@ -14,7 +14,7 @@
     </testsuites>
     <source>
         <include>
-            <directory>app</directory>
+            <directory suffix=".php">app</directory>
         </include>
     </source>
     <php>
@@ -31,4 +31,9 @@
         <env name="TELESCOPE_ENABLED" value="false"/>
         <env name="NYT_API_KEY" value="test" />
     </php>
+    <coverage includeUncoveredFiles="true">
+        <report>
+            <clover outputFile="clover.xml" />
+        </report>
+    </coverage>
 </phpunit>
