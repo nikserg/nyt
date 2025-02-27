@@ -30,8 +30,3 @@ jobs:
       uses: ericsizemore/phpunit-coverage-check-action@2.0.0
       with:
         threshold: 90
-    - name: Make code coverage badge
-      uses: timkrase/phpunit-coverage-badge@v1.2.1
-      with:
-        coverage_badge_path: coverage.svg
-        push_badge: true
