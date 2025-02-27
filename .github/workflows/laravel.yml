@@ -30,7 +30,5 @@ jobs:
       uses: ericsizemore/phpunit-coverage-check-action@2.0.0
       with:
         threshold: 90
-    - name: Checkout code
-      uses: actions/checkout@v2
     - name: phpunit-coverage-badge
       uses: timkrase/phpunit-coverage-badge@v1.2.1
